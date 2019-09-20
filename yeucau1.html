@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let nameCustomer = prompt("Điền Tên Đứa Khách Vào ");
+        let idCard = prompt("Điền Chứng Minh Thư Của Nó Vào Đây");
+        let birthdayCustomer = prompt(" Hỏi Ngày Sinh Của Nó");
+        let emailCustomer = prompt("Hỏi Email Của Nó");
+        let addressCustomer = prompt("Nhà Của Nó Ở Đâu?")
+        let typeCustomer = prompt("Nó là kiểu khách hàng gì?");
+        let discount = prompt("Giảm Giá bao nhiêu %?");
+        let numberofaccompanying = prompt("Số Lượng đi kèm?");
+        let typeRoom = prompt("Kiểu phòng gì?");
+        let rentDay = prompt("Nó thuê mấy ngày");
+        let typeserviece = prompt("Nó dùng kiểu dịch vụ gì?");
+        let totalPays = 500 * Number.parseInt(rentDay) * (1 - Number.parseFloat(discount)/100);
+        alert("Information Of Customer: \n" +
+                "Name: " +nameCustomer +
+                        "\nId Card : " +idCard +
+                        "\nBirthday : " + birthdayCustomer +
+                        "\nEmail : " + emailCustomer +
+                "\nAddress : " + addressCustomer +
+                "\nType Customer : " + typeCustomer +
+                "\nDiscount : " + discount +
+                "\nAccompanying : " + numberofaccompanying +
+                "\nType Room : " +typeCustomer +
+                "\nRent Days : " + rentDay +
+                "\nType Service : " +typeserviece +
+                "\nTotal Pays : " +totalPays
+
+
+        )
+    </script>
+</body>
+</html>

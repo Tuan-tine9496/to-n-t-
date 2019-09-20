@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Chiều Cao</label>
+    <input id= "chieuCao" type="text"/>
+    <label>Cân Nặng</label>
+    <input id= "canNang" type="text"/>
+    <input type="button" onclick="Bmi()" value="BMI"/>
+
+</form>
+<script>
+    let chieuCao = document.getElementById("chieuCao");
+    let canNang =document.getElementById("canNang");
+
+    function Bmi() {
+        let chiSo = canNang.value / chieuCao.value;
+        if (chiSo < 18) {
+        document.write("Underweight");
+    else if (chiSo < 25.0)
+        document.write("Normal");
+    else if (chiSo < 30.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+
+    }
+
+
+</script>
+</body>
+</html>

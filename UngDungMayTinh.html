@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label></label>
+    <input id="number1" type="number">
+    <label></label>
+    <input id="number2" type="number">
+<input type="button" onclick="Addition()" value="Addition(+)">
+    <input type="button" onclick="Subtraction()" value="Subtraction(-)">
+    <input type="button" onclick="Multipcation()" value="Multiplication(X)">
+    <input type="button" onclick="Division()" value="Division(/)">
+</form>
+<script>
+    let number1 = document.getElementById("number1");
+    let number2 = document.getElementById("number2");
+    function Addition(){
+        alert(number1.value*1 + number2.value*1);
+    }
+    function Subtraction() {
+        alert(number1.value * 1 - number2.value * 1);
+    }
+    function Multipcation() {
+        alert(number1.value * number2.value);
+    }
+    function Division() {
+        alert(number1.value / number2.value);
+    }
+</script>
+</body>
+</html>
